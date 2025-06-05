@@ -1,0 +1,33 @@
+*{
+margin: 0;
+padding: 0;
+zoom: 100%;
+}
+
+.main-mimicastle{
+height: 100vh;
+width: 100vw;
+background-image: url(public/assets/fundo.jpg);
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+
+.main-mimicastle img{
+height:256px;
+width:256px;
+position: absolute;
+bottom:70px;
+left: 150px;
+background-size: cover;
+
+}
+
+.main-mimicastle p{
+
+margin: 100px;
+background-size: cover;
+
+}

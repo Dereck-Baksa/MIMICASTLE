@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="html-tamaho">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src=""></script>
+</head>
+<body>
+  
+    
+
+
+
+
+
+    <section class="main-mimicastle" id="render_sala">
+          
+    </section>
+</body>
+<script>
+var posicaoInicial 
+var mapa
+
+function criarMapa(){
+ mapa = [[5],[2],[0],[1],[2]]
+posicaoInicial = mapa[0][0]
+}
+
+function moverPosicao(x,y){
+    posicaoInicial = mapa[0][0] 
+    console.log(posicaoInicial)
+    var posicaoatual = posicaoInicial
+    console.log(posicaoatual)
+    salaExibida(posicaoatual)
+}
+
+function salaExibida(posicaoatual){
+
+
+var salaNormal = `  <p>MIMICASTLE</p>
+<img src="explorada.PNG">
+<p>use WASD para se mover</p>
+`
+var salaTocha = `
+  <p>MIMICASTLE</p>  
+  <img src="bauTocha.PNG">    
+  <p>use WASD para se mover</p>
+  `
+var salaCaveira = ` 
+  <p>MIMICASTLE</p>
+  <img src="bauOsso.PNG">        
+  <p>use WASD para se mover</p>
+`
+
+
+if(posicaoatual == 0){
+render_sala.innerHTML = salaNormal
+}else if(posicaoatual == 1){
+render_sala.innerHTML = salaTocha
+}else if(posicaoatual == 2){
+render_sala.innerHTML = salaTocha
+}else if(posicaoatual == 3){
+render_sala.innerHTML = salaCaveira
+}else if(posicaoatual == 4){
+render_sala.innerHTML = salaCaveira
+}else if(posicaoatual == 5){
+render_sala.innerHTML = salaCaveira
+}
+
+}
+
+
+criarMapa()
+moverPosicao()
+
+</script>
+</html>
