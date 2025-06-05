@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src=""></script>
+</head>
+<body>
+    <section class="main-mimicastle">
+        <canvas id="render_sala">
+
+
+        </canvas>
+    </section>
+</body>
+<script>
+var posicaoInicial 
+var mapa
+
+function criarMapa(){
+ mapa = [[1],[2],[0],[1],[2]]
+posicaoInicial = mapa[0][0]
+}
+
+function moverPosicao(x,y){
+    posicaoInicial = mapa[0][0] 
+    console.log(posicaoInicial)
+    var posicaoatual = posicaoInicial
+    salaExibida(posicaoatual)
+}
+
+function salaExibida(posicaoatual){
+
+render_sala.innerHTML = posicaoatual
+
+}
+
+
+criarMapa()
+moverPosicao()
+
+</script>
+</html>
