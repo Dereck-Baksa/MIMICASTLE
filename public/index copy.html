@@ -91,10 +91,10 @@
 
 <body style="background-color: rebeccapurple;">
     <section class="main-mimicastle">
-        <canvas id="render_sala">
+        <div id="render_sala">
+            
 
-
-        </canvas>
+        </div>
     </section>
 </body>
 <script>
@@ -115,8 +115,34 @@
 
     function salaExibida(posicaoatual) {
 
-        render_sala.innerHTML = posicaoatual
-
+        var osso = `    <div class="osso"></div>`
+        var explorar = `<div class="explorar"></div>`
+        var tocha = `<div class="tocha"></div>`
+    
+        if(posicaoatual == 0){
+            render_sala.innerHTML = explorar
+        } else 
+        if(posicaoatual == 1){
+            render_sala.innerHTML = tocha
+        } else 
+        if(posicaoatual == 2){
+            render_sala.innerHTML = tocha
+        } else 
+        if(posicaoatual == 3){
+            render_sala.innerHTML = osso
+        } else 
+        if(posicaoatual == 4){
+            render_sala.innerHTML = osso
+        } else 
+        if(posicaoatual == 5){
+            render_sala.innerHTML = osso
+        }
+    
+    
+    
+    
+    
+    
     }
 
 

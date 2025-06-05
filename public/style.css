@@ -9,3 +9,27 @@ height: 100vh;
 width: 100vw;
 background-image: url(assets/fundo.avif);
 }
+
+
+.osso{
+width: 256px; 
+height: 256px;   
+background-image: url(assets/bauOsso.png);
+background-size: cover;
+}
+
+
+.tocha{
+width: 256px; 
+height: 256px;   
+background-image: url(assets/bauTocha.png);
+background-size: cover;
+}
+
+
+.explorar{
+width: 256px; 
+height: 256px;   
+background-image: url(assets/explorada.png);
+background-size: cover;
+}
